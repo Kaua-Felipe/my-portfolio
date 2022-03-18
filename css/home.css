@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+body {
+    background-color: #333333;
+}
+
+/* Cabeçalho de Apresentação */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), transparent), url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+}
+
+/* Sessão Apresentação */
+.text-box {
+    color: #ffffff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p {
+    font-size: 50px;
+    font-weight: 600;
+}
+.text-box h1 {
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    background: url(../images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 25s linear infinite;
+}
+.text-box h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.text-box h3::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+.text-box .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    transition-duration: .5s;
+}
+.text-box a:hover {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #333333;
+    font-weight: 500;
+}
+.text-box a span {
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+/* Sessão de Bem Vindo */
+.window-welcome {
+    width: 800px;
+    height: 300px;
+    background-color: #263238;
+    display: flex;
+    position: absolute;
+    top: 180px;
+    right: 20px;
+    flex: 1;
+    border-radius: .5em;
+    padding: 2em;
+    padding-left: 1em;
+    font-size: 20px;
+    border: 5px solid #192125;
+    box-shadow: 0 20px 0 #192125;
+    transition-duration: .2s;
+}
+.window-welcome:hover {
+    top: 200px;
+    box-shadow: none;
+}
+.circles {
+    width: 100px;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    display: flex;
+}
+.circle {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    color: transparent !important;
+}
+.circles .circle:nth-child(1) {
+    background: #FF5F56;
+    color: #FF5F56;
+}
+.circles .circle:nth-child(2) {
+    background: #FFBD2E;
+    color: #FFBD2E;
+}
+.circles .circle:nth-child(3) {
+    background: #27C93F;
+    color: #27C93F;
+}
+.window-welcome .col-numbers ul {
+    list-style: none;
+    line-height: 35px;
+}
+.window-welcome .col-numbers ul li {
+    color: #757778;
+}
+.window-welcome .row-horizontal {
+    width: 1px;
+    background-color: #757778;
+    margin: 0 10px;
+    color: transparent;
+}
+.window-welcome pre code {
+    display: flex;
+    line-height: 1.5;
+    font-weight: bold;
+    position: absolute;
+}
+.window-welcome pre code:nth-child(1) {
+    top: 41px;
+}
+.window-welcome pre code:nth-child(2) {
+    top: 110px;
+}
+.window-welcome pre code:nth-child(3) {
+    top: 180px;
+}
+code span {
+    color: #F9F9F9;
+}
+code .variable, code .comandReturn, code .comandDocument {
+    color: hsl(350, 40%, 70%);
+}
+code .operador {
+    color: hsl(40, 90%, 60%);
+}
+code .comand {
+    color: #59E2F7;
+}
+code .aspas, code .text-info {
+    color: #cec35b;
+}
+code .comandWrite {
+    color: #3C6FC0;
+}
+code .cifrão {
+    color: #487DA9;
+}
+code input {
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    padding-left: 5px;
+    border-bottom: 2px solid #E6DA64;
+    color: #E6DA64;
+}
+code #name-people {
+    color: #FFBD2E;
+}
+
+/* Sessão dos Projetos */
+.my-projects {
+    padding: 100px 100px 0 100px;
+}
+.my-projects h2 {
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+.all-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.all-projects a {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    margin-bottom: 70px;
+    height: 600px;
+    border-radius: 1px;
+}
+.all-projects a:nth-child(1) {
+    background: url(../images/pj-animalshope.jpg);
+}
+.all-projects a:nth-child(2) {
+    background: url(../images/pj-organizacaoprofessores.jpg);
+}
+.all-projects a:nth-child(3) {
+    background: url(../images/pj-portfolio.jpg);
+}
+.all-projects a:nth-child(2), .all-projects a:nth-child(4) {
+    /* margin-left: 10px; */
+}
+.project {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    transition-duration: .5s;
+}
+.project:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.782);
+}
+.project span, .project h3 {
+    color: whitesmoke;
+}
+.project h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.project span {
+    font-size: 17px;
+}
+
+/* Sessão sobre mim */
+.about {
+    background-color: #070a18;
+    padding: 100px;
+}
+.about .title-about {
+	font-size: 50px;
+	font-weight: 700;
+	margin-left: 8%;
+}
+.container-about {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.text-about {
+    max-width: 50%;
+}
+.text-about p {
+	line-height: 25px;
+}
+.img-about {
+	width: 250px;
+	height: 300px;
+	/* background-color: white; */
+	border-radius: 2px;
+	
+}
+.img-about img {
+	width: 100%;
+	border-radius: 2px;
+	border: 5px whitesmoke solid;
+	padding: 5px;
+}
+
+/* Criação das Animações */
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .my-projects {
+        padding: 150px 10px 0 100px;
+    }
+    .all-projects a {
+        min-width: 400px;
+    }
+}
+@media (max-width: 423px) {
+    .all-projects a {
+        min-width: 260px;
+    }
+}
