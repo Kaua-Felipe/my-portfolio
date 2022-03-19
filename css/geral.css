@@ -110,6 +110,10 @@ nav ul li a:hover::after {
 	font-size: 30px;
 	font-weight: bold;
 }
+.nav-mobile div img {
+	width: 50px;
+	height: 50px;
+}
 .nav-mobile ul {
 	display: flex;
 	flex-direction: column;
@@ -133,6 +137,14 @@ nav ul li a:hover::after {
 	font-size: 20px;
 	margin-bottom: 40px;
 	letter-spacing: 5px;
+}
+nav div {
+	display: none;
+	margin-right: 20px;
+}
+nav div img {
+	width: 50px;
+	height: 50px;
 }
 
 /* Rodapé - Footer */
@@ -317,7 +329,13 @@ li a img.img-rede {
     width: 100%;
 }
 @media(max-width: 700px) {
-    footer {
+	nav ul li {
+		display: none;
+	}
+	nav div {
+		display: initial;
+	}
+	footer {
         bottom: unset;
     }
     .col {

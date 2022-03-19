@@ -299,6 +299,12 @@ code #name-people {
     }
 }
 
+/* Assessibilidade */
+@media (max-width: 1398px) {
+	.window-welcome {
+		display: none;
+	}
+}
 @media (max-width: 700px) {
     .my-projects {
         padding: 150px 10px 0 100px;
