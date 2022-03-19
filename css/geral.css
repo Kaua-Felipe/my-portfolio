@@ -95,6 +95,9 @@ nav ul li a:hover::after {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a652f07866ef3c8f755ab4d115f9c2e033ff4e8d
 /* Navegação Mobile */
 .nav-mobile {
 	z-index: 100;
@@ -111,10 +114,13 @@ nav ul li a:hover::after {
 	font-size: 30px;
 	font-weight: bold;
 }
+<<<<<<< HEAD
 .nav-mobile div img {
 	width: 50px;
 	height: 50px;
 }
+=======
+>>>>>>> a652f07866ef3c8f755ab4d115f9c2e033ff4e8d
 .nav-mobile ul {
 	display: flex;
 	flex-direction: column;
@@ -139,6 +145,7 @@ nav ul li a:hover::after {
 	margin-bottom: 40px;
 	letter-spacing: 5px;
 }
+<<<<<<< HEAD
 nav div {
 	display: none;
 	margin-right: 20px;
@@ -150,6 +157,9 @@ nav div img {
 
 =======
 >>>>>>> 8c7ef8f7df34d5d2cb0a15fdbcccd951344db6a9
+=======
+
+>>>>>>> a652f07866ef3c8f755ab4d115f9c2e033ff4e8d
 /* Rodapé - Footer */
 footer {
     width: 100%;
