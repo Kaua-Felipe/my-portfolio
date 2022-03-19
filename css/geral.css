@@ -94,6 +94,7 @@ nav ul li a:hover::after {
     width: 70%;
 }
 
+<<<<<<< HEAD
 /* Navegação Mobile */
 .nav-mobile {
 	z-index: 100;
@@ -147,6 +148,8 @@ nav div img {
 	height: 50px;
 }
 
+=======
+>>>>>>> 8c7ef8f7df34d5d2cb0a15fdbcccd951344db6a9
 /* Rodapé - Footer */
 footer {
     width: 100%;
