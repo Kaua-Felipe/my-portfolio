@@ -23,11 +23,3 @@ var loader = document.getElementById("preloader")
 window.addEventListener("load", () => {
     loader.style.display = "none"
 })
-
-/*  */
-$(".project").mousemove(() => {
-	
-})
-$(".project").mouseout(() => {
-	name_project.style.color = "whitesmoke"
-})

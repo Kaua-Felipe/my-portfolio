@@ -1,5 +1,5 @@
 /* Scroll Suave */
-$(".back-top a, a.link-projects, a.link-about").click(function(e) {
+$(".back-top a, .links").click(function(e) {
     e.preventDefault()
     var idScrollTop = $(this).attr("href")
     targetOffset = $(idScrollTop).offset().top
@@ -13,6 +13,8 @@ var telaMenuMobile = document.querySelector("div.nav-mobile")
 
 $("#icon-hamburguer").click(() => {
 	telaMenuMobile.style.display = "initial"
+    telaMenuMobile.style.transitionDuration = "10s"
+    telaMenuMobile.style.transform = "scale(1)"
 })
 $(".list-option").click(() => {
 	telaMenuMobile.style.display = "none"

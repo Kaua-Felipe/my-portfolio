@@ -73,6 +73,16 @@ nav ul li {
     list-style: none;
     margin: 10px 30px;
 }
+nav ul li .active::after {
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+}
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -102,6 +112,8 @@ nav ul li a:hover::after {
 	background-color: #0F141E;
 	position: fixed;
 	display: none;
+    transform: scale(0);
+    animation: aparecerNavegacaoMobile .8s;
 }
 .nav-mobile div {
 	color: #878a8f;
@@ -113,6 +125,12 @@ nav ul li a:hover::after {
 .nav-mobile div img {
 	width: 50px;
 	height: 50px;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+.nav-mobile div img:hover {
+    transform: scale(.7);
+    transform: rotate(90deg);
 }
 .nav-mobile ul {
 	display: flex;
@@ -145,6 +163,7 @@ nav div {
 nav div img {
 	width: 50px;
 	height: 50px;
+    cursor: pointer;
 }
 
 /* Rodapé - Footer */
@@ -191,6 +210,12 @@ footer {
 .col ul li {
     list-style: none;
     margin-bottom: 12px;
+}
+.col ul li a {
+    transition-duration: .3s;
+}
+.col ul li a:hover {
+    border-bottom: 3px solid #cccccc;
 }
 form {
     padding-bottom: 15px;
@@ -354,4 +379,8 @@ li a img.img-rede {
     100% {
         left: 100%;
     }
+}
+@keyframes aparecerNavegacaoMobile {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
