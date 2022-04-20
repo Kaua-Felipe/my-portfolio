@@ -357,6 +357,14 @@ code #name-people {
         min-width: 400px;
     }
 }
+@media (max-width: 500px) {
+    .text-box h1 {
+        font-size: 140px;
+    }
+    .title-knowledge {
+        font-size: 30px;
+    }
+}
 @media (max-width: 423px) {
     .all-projects a {
         min-width: 260px;
