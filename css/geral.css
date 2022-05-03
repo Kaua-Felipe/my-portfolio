@@ -58,10 +58,17 @@ nav {
     backdrop-filter: saturate(180%) blur(15px);
 }
 .logo a {
-    font-size: 20px;
     position: absolute;
     left: 8%;
-	top: 37%;
+	top: 30%;
+}
+.logo a img, footer .row-footer:first-child a img  {
+    background-color: white;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    border: solid white 2px;
+    padding: 1.2px;
 }
 nav ul {
     flex: 1;
@@ -164,7 +171,6 @@ footer {
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #ffffff;
     padding: 100px 0 30px;
-    /* border-top-left-radius: 125px; */
     font-size: 13px;
     line-height: 20px;
 }

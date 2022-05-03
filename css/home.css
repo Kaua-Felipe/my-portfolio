@@ -194,6 +194,7 @@ code #name-people {
 
 /* Sessão dos Projetos */
 .my-projects {
+    background: linear-gradient(to bottom,  #333333 0%,#252525 100%);
     padding: 100px 100px 0 100px;
 }
 .my-projects h2 {
@@ -251,7 +252,7 @@ code #name-people {
 /* Sessão Conhecimentos, Ferramentas, Tecnologias, Linguagens e etc */
 .conhecimentos {
     width: 100%;
-    background-color: rgb(37, 37, 37);
+    background: linear-gradient(to bottom,  #252525 0%, #252525 40%, #070A18 100%);
     display: flex;
     flex-direction: column;
     padding: 100px 100px 0 100px;
