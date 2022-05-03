@@ -350,12 +350,34 @@ code #name-people {
 		display: none;
 	}
 }
+@media (max-width: 869px) {
+    .text-box .row span {
+        margin-top: 10px;
+    }
+}
 @media (max-width: 700px) {
     .my-projects {
         padding: 150px 10px 0 100px;
     }
     .all-projects a {
         min-width: 400px;
+    }
+    .about {
+        padding: 60px;
+    }
+    .about .title-about {
+        margin-left: 0;
+        text-align: center;
+    }
+    .container-about {
+        padding-top: 50px;
+    }
+    .container-about .text-about {
+        max-width: none;
+        padding-bottom: 30px;
+    }
+    .container-about .text-about p {
+        text-align: center;
     }
 }
 @media (max-width: 500px) {
@@ -369,5 +391,29 @@ code #name-people {
 @media (max-width: 423px) {
     .all-projects a {
         min-width: 260px;
+    }
+    .about .title-about {
+        font-size: 40px;
+    }
+    .project h3 {
+        font-size: 26px;
+    }
+}
+@media (max-width: 360px) {
+    .text-box {
+        bottom: 10%;
+        left: 20%;
+    }
+    .text-box p {
+        font-size: 30px;
+    }
+    .text-box h1 {
+        font-size: 100px;
+    }
+    .text-box h3 {
+        font-size: 20px;
+    }
+    .title-knowledge {
+        font-size: 25px;
     }
 }
