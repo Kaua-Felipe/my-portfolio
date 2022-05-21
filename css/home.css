@@ -310,6 +310,7 @@ code #name-people {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 .text-about {
     max-width: 50%;
@@ -327,6 +328,23 @@ code #name-people {
 	border-radius: 2px;
 	border: 5px whitesmoke solid;
 	padding: 5px;
+}
+.curriculo-about {
+    width: 100%;
+    padding: 10px 0 0 0;
+}
+.curriculo-about a {
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+    border: solid white 2px;
+    margin-left: 7.5%;
+    transition-duration: .5s;
+}
+.curriculo-about a:hover {
+    color: #333;
+    background-color: whitesmoke;
+    transform: scale(0.1);
 }
 
 /* Criação das Animações */
@@ -379,6 +397,15 @@ code #name-people {
     .container-about .text-about p {
         text-align: center;
     }
+    .curriculo-about {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0 0 0;
+    }
+    .curriculo-about a {
+        padding: 15px 50px;
+        margin: 0;
+    }
 }
 @media (max-width: 500px) {
     .text-box h1 {
@@ -386,6 +413,9 @@ code #name-people {
     }
     .title-knowledge {
         font-size: 30px;
+    }
+    .text-box .row a:nth-child(1) {
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 423px) {
